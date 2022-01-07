@@ -147,8 +147,20 @@
                   </div>
                 </div>
               </fieldset>
+
+              <fieldset th:if="${funcionario.id == null}">
+                <legend>Dados de Login</legend>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="div form-group">
+                      <label for="senha">Senha</label>
+                      <input type="password" class="form-control" placeholder="Digite a senha" th:field="*{senha}">
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
             </div>
-            <!-- /.card-body -->
+          <!-- /.card-body -->
 
             <div class="card-footer">
               <button type="submit" class="btn btn-primary">Salvar</button>
